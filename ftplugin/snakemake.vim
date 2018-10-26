@@ -1,3 +1,1 @@
-
-source $VIMRUNTIME/ftplugin/python.vim
-
+runtime! ftplugin/python.vim

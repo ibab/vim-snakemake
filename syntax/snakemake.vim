@@ -18,7 +18,7 @@
 "
 
 " load settings from system python.vim (7.4)
-source $VIMRUNTIME/syntax/python.vim
+runtime! syntax/python.vim
 
 "
 " Snakemake rules, as of version 3.3
