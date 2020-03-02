@@ -1,26 +1,9 @@
 " Vim syntax file
 " Language:	Snakemake (extended from python.vim)
-" Maintainer:	Jay Hesselberth (jay.hesselberth@gmail.com)
-" Last Change:	2016 Jan 23
-"
-" Usage
-"
-" copy to $HOME/.vim/syntax directory and add:
-"
-" au BufNewFile,BufRead Snakefile set syntax=snakemake
-" au BufNewFile,BufRead *.snake set syntax=snakemake
-"
-" to your $HOME/.vimrc file
-"
-" force coloring in a vim session with:
-"
-" :set syntax=snakemake
-"
 
 " load settings from system python.vim (7.4)
 runtime! syntax/python.vim
 
-"
 " Snakemake rules, as of version 3.3
 "
 " XXX N.B. several of the new defs are missing from this table i.e.
@@ -56,5 +39,3 @@ syn match   pythonFunction
 syn sync match pythonSync grouphere NONE "^\s*\%(rule\|subworkflow\)\s\+\h\w*\s*"
 
 let b:current_syntax = 'snakemake'
-
-" vim:set sw=2 sts=2 ts=8 noet:
